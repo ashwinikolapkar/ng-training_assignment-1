@@ -1,0 +1,50 @@
+{
+  "name": "ng-todo-app",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --configuration production --optimization",
+    "server": "json-server --watch db.json --port 5000",
+    "bundle-ng-frontend-report": "ng build --configuration production --source-map && source-map-explorer dist/ng-todo-app/browser/*.js",
+    "e2e": "ng e2e",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^17.3.8",
+    "@angular/common": "^17.3.8",
+    "@angular/compiler": "^17.3.8",
+    "@angular/core": "^17.3.8",
+    "@angular/forms": "^17.3.8",
+    "@angular/platform-browser": "^17.3.8",
+    "@angular/platform-browser-dynamic": "^17.3.8",
+    "@angular/router": "^17.3.8",
+    "@fortawesome/angular-fontawesome": "^0.14.1",
+    "@fortawesome/fontawesome-svg-core": "~1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "json-server": "^1.0.0-beta.3",
+    "rxjs": "~7.4.0",
+    "ts-jest": "^29.1.2",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.5"
+  },
+  "devDependencies": {
+    "@angular-builders/jest": "^13.0.2",
+    "@angular-devkit/build-angular": "^17.3.7",
+    "@angular/cli": "^17.3.7",
+    "@angular/compiler-cli": "^17.3.8",
+    "@cypress/schematic": "^1.6.0",
+    "@testing-library/angular": "^11.0.2",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^12.11.1",
+    "cypress": "latest",
+    "jest": "^29.7.0",
+    "jest-preset-angular": "^11.0.1",
+    "source-map-explorer": "^2.5.3",
+    "typescript": "~5.4.5"
+  }
+}
